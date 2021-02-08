@@ -1,9 +1,10 @@
 <!DOCTYPE html>
   <body>
-    <p id="notice">
-    <%= notice %>
-    </p>
-    <p>
+    <% if flash[:notice] %>
+     <p id="notice">
+       <%= flash[:notice] %>
+     </p>
+   <% end %>
       <strong>Title:</strong>
       <%= @book.title %>
     </p>
