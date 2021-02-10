@@ -18,29 +18,55 @@
   padding: 0;
   box-sizing: border-box;
   color: #6c6b6b;
-  }
-header {
+}
+h1 {
   width: 342px;
   height: 31px;
   font-size: 26px;
-  margin: 18px;
+  font-weight: 700;
+  margin: 18px 0px;
   color: black
-  }
-
-h3 {
-  margin: 18px;
-  font-size: 26px
 }
-
 p {
   font-size: 13px;
   margin: 33px;
 }
-
-.th {
+body {
+  display: block;
   font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0
+}
+table th {
   line-height: 18px;
   padding-bottom: 5px;
   text-align: center;
+  font-weight: 700;
+  color: black;
 }
-
+table td {
+  display: table-cell;
+  padding: 0px 5px 7px 5px;
+}
+h2 {
+  font-size: 19.5px;
+  line-height: 18px;
+  font-weight: 700;
+  width: 342px;
+  height: 31px;
+  color: black;
+  margin: 10px;
+}
+.title_field, .body_area {
+  margin-bottom: 10px;
+}
+.errors_count {
+  color: red;
+}
+.update_book {
+  margin-bottom: 10px;
+}

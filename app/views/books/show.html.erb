@@ -1,18 +1,20 @@
 <!DOCTYPE html>
   <body>
     <% if flash[:notice] %>
-     <p id="notice">
-       <%= flash[:notice] %>
-     </p>
-   <% end %>
-      <strong>Title:</strong>
-      <%= @book.title %>
+    <p id="notice">
+      <%= flash[:notice] %>
+    </p>
+    <% end %>
+
+    <p>
+        <strong>Title:</strong>
+        <%= @book.title %>
     </p>
     <p>
-      <strong>Body:</strong>
-      <%= @book.body %>
-    </p>
+        <strong>Body:</strong>
+        <%= @book.body %>
+    </p><br>
 
-  <%= link_to "Edit", edit_book_path(@book) %>
-  <%= link_to "Back", "/books" %>
+      <%= link_to "Edit", edit_book_path(@book) %>|
+      <%= link_to "Back", "/books" %>
   </body>
